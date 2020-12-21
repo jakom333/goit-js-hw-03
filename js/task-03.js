@@ -2,7 +2,7 @@ const findBestEmployee = function (employees) {
   let name;
   let taskAmount = 0;
 
-  for (const key in employees) {
+  for (let key in employees) {
     if (taskAmount < employees[key]) {
       taskAmount = employees[key];
       name = key;
